@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: url("./images/bg-pattern-top-desktop.svg"),
+    url("./images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+  background-position: left top, right bottom;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 100rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box1 {
+  width: 50rem;
+  padding-right: 10rem;
+  margin-bottom: 5rem;
+}
+.box1 .box1-heading {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+.box1-content {
+  line-height: 2rem;
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+}
+.box-rate {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+}
+.rate {
+  width: 38rem;
+  margin-top: 2rem;
+  background: hsl(300, 24%, 96%);
+  display: flex;
+  padding: 1rem 5rem 1rem 2rem;
+  border-radius: 1rem;
+}
+.star {
+  padding-right: 1rem;
+}
+.rate-content {
+  display: flex;
+}
+.rate1 {
+  align-self: flex-start;
+}
+.rate2 {
+  align-self: center;
+}
+.rate3 {
+  align-self: flex-end;
+}
+.customer-box {
+  width: 100rem;
+  height: 25rem;
+  display: flex;
+  justify-content: space-between;
+}
+.customer img {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.customer {
+  background: hsl(300, 43%, 22%);
+  width: 32rem;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 1rem;
+}
+.customer-main {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.name {
+  font-weight: 500;
+  line-height: 2rem;
+}
+.title {
+  color: hsl(333, 80%, 67%);
+}
+.customer1 {
+  align-self: flex-start;
+}
+.customer2 {
+  align-self: center;
+}
+.customer3 {
+  align-self: flex-end;
+}
+/* ----------Media Query------------ */
+@media (max-width: 1050px) {
+  body {
+    background: url("./images/bg-pattern-top-mobile.svg"),
+      url("./images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-position: left top, right bottom;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+  }
+  .box1 {
+    width: 100%;
+    padding: 0;
+  }
+  .box-rate {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 0;
+  }
+  .box1-content {
+    padding-top: 1rem;
+  }
+  .rate {
+    width: 100%;
+    display: block;
+  }
+  .rate1 {
+    align-self: center;
+  }
+  .rate2 {
+    align-self: center;
+  }
+  .rate3 {
+    align-self: center;
+  }
+  .rate-content {
+    display: block;
+  }
+  .customer-box {
+    display: block;
+    width: 100%;
+  }
+  .customer {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .customer1 {
+    align-self: center;
+  }
+  .customer2 {
+    align-self: center;
+  }
+  .customer3 {
+    align-self: center;
+  }
+}
